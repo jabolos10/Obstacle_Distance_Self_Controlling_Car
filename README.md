@@ -2,6 +2,7 @@
 
 ### Obstacle-Distance Self-Controlling Car
 
+[![Watch the demo on YouTube](https://img.shields.io/badge/YouTube-Watch%20the%20demo-red?logo=youtube&logoColor=white)](https://youtube.com/shorts/7Yi4cYmKdvI)
 [![C](https://img.shields.io/badge/C-STM32%20HAL-00599C?logo=c&logoColor=white)](https://www.st.com/en/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus.html)
 [![Arduino](https://img.shields.io/badge/ESP8266-Arduino-00979D?logo=arduino&logoColor=white)](https://www.arduino.cc/)
 [![STM32](https://img.shields.io/badge/MCU-STM32%20NUCLEO-03234B?logo=stmicroelectronics&logoColor=white)](https://www.st.com/en/evaluation-tools/nucleo-f411re.html)
@@ -9,6 +10,10 @@
 A mobile robot that regulates its own distance from a wall using a closed-loop ultrasonic feedback controller. Built for the **Microprocessor Systems** course at **Poznań University of Technology**, Faculty of Control, Robotics and Electrical Engineering, together with Jakub Kaźmierczak and Jakub Krusicki.
 
 ![Assembled vehicle](docs/images/vehicle_photo.jpg)
+
+## Demo
+
+▶️ **[Watch on YouTube](https://youtube.com/shorts/7Yi4cYmKdvI)** — the car tracking a target distance live, with the web dashboard and LCD readout.
 
 ## How it works
 
