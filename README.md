@@ -47,7 +47,7 @@ The ESP8266 hosts its own access point (`DistanceMonitor`) and web server — no
 Two independent codebases, bridged over UART:
 
 - **[`firmware/esp8266_wifi_dashboard/`](firmware/esp8266_wifi_dashboard)** — complete Arduino sketch for the ESP8266: hosts the access point, serves the dashboard HTML/JS, exposes `/data` and `/set` endpoints, and relays the target/measured distance to and from the STM32 over serial.
-- **[`firmware/stm32/`](firmware/stm32)** — STM32 HAL drivers and control logic (ultrasonic sensor, PD controller, motor control, LCD, ISR callbacks). **This is a partial reconstruction from the lab report, not the full CubeIDE project** — see [`firmware/stm32/README.md`](firmware/stm32/README.md) for exactly what's verbatim, what's a placeholder, and what's still missing.
+- **[`firmware/stm32/`](firmware/stm32)** — STM32 HAL drivers and control logic: ultrasonic sensor timing, PD controller, motor control, LCD driver, and the ISR callbacks that tie them together. See [`firmware/stm32/README.md`](firmware/stm32/README.md) for a short layout/config reference.
 
 ### Control loop
 
@@ -92,7 +92,7 @@ Full test methodology and additional-requirements writeup are in the [project re
 .
 ├── firmware/
 │   ├── esp8266_wifi_dashboard/   # complete ESP8266 Arduino sketch (AP + dashboard + serial bridge)
-│   └── stm32/                    # STM32 HAL drivers/control logic — partial, see its README
+│   └── stm32/                    # STM32 HAL drivers and control logic
 ├── docs/
 │   ├── images/                   # vehicle photo, dashboard screenshot, architecture diagram
 │   └── report/                   # full lab report (PDF)

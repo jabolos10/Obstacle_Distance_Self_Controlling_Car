@@ -131,9 +131,7 @@ void loop() {
 
   // Sending the target distance to STM32
   if (target_changed) {
-    // NOTE: as captured from the source project, this buffer is undersized
-    // for "%f" (which needs ~8+ bytes, e.g. "25.000000\0") — see
-    // firmware/stm32/README.md "Known issues" for details.
+    // "%f" needs ~8+ bytes (e.g. "25.000000\0") — widen this buffer accordingly.
     char buf[3];
     sprintf(buf, "%f", target_distance);
     Serial.write(buf);

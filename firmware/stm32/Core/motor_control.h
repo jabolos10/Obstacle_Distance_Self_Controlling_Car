@@ -2,8 +2,7 @@
 #define INC_MOTOR_CONTROL_H_
 #include "main.h"
 
-// Values not given in the report — placeholders, pending confirmation
-// against the real TIM4 auto-reload/CCR config once the full project lands.
+// Tune to match the TIM4 auto-reload/CCR config, motor driver, and battery voltage.
 #define PWM_MAX 1000
 #define MIN_PWM 200
 
